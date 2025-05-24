@@ -11,11 +11,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MinecraftServerMixin {
     @Inject(method = "runServer", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/MinecraftServer;createMetadata()Lnet/minecraft/server/ServerMetadata;"))
     private void polymer_autohost_init(CallbackInfo ci) {
-        AutoHost.init((MinecraftServer) (Object) this);
+        // AutoHost.init((MinecraftServer) (Object) this);
     }
 
     @Inject(method = "shutdown", at = @At("TAIL"))
     private void polymer_autohost_end(CallbackInfo ci) {
-        AutoHost.end((MinecraftServer) (Object) this);
+        // AutoHost.end((MinecraftServer) (Object) this);
     }
 }
