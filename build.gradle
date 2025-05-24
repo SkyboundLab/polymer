@@ -65,6 +65,7 @@ allprojects {
         maven { url "https://maven.theepicblock.nl" }
         maven { url "https://lazurite.dev/maven/releases" }
         maven { url "https://repo.opencollab.dev/maven-snapshots/" }
+        maven { url = uri("https://repo.opencollab.dev/main/") }
         maven { url 'https://maven.ladysnake.org/releases' }
         mavenLocal()
     }
