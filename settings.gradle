@@ -4,6 +4,9 @@ pluginManagement {
             name = 'Fabric'
             url = 'https://maven.fabricmc.net/'
         }
+        maven {
+            url = uri("https://repo.opencollab.dev/main/")
+        }
         gradlePluginPortal()
     }
 }
