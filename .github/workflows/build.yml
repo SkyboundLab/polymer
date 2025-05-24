@@ -5,7 +5,7 @@
 
 name: build
 on: 
- pull_request:
+ workflow_dispatch:
  push:
   paths-ignore: [ '.github/', 'docs/', 'mkdocs.yml' ]
 
